@@ -1,74 +1,127 @@
 # 📰 Fake News Detection System
 
-A Machine Learning-based web application that predicts whether a given news article is likely to be **Real News 🟢** or **Fake News 🔴**.
+A Machine Learning based web application that predicts whether a given news article is **Real News** or **Fake News**.
 
-The application uses **TF-IDF text vectorization** and **Logistic Regression** for classification and is deployed as an interactive **Streamlit** web application.
+The application is built using **Python, Scikit-learn, TF-IDF, Logistic Regression, and Streamlit**.
+
+---
 
 ## 🚀 Features
 
-- 📰 Enter a news headline and article text
-- 🤖 Predict Real News or Fake News
-- 📈 Display prediction confidence
-- 📊 Display model performance
-  - Accuracy
-  - Precision
-  - Recall
-  - F1-Score
-- 🗑️ Clear input fields
-- 📱 Interactive Streamlit interface
-- ⚠️ Includes a prediction disclaimer
+* 📰 Enter a news title and article text
+* 🤖 Predicts Real News or Fake News
+* 📈 Displays prediction confidence for each article
+* 📊 Displays overall model performance
+* 🎯 Shows Accuracy, Precision, Recall, and F1-Score
+* 🗑️ Clear button to reset the input
+* ⚠️ Provides a disclaimer that predictions are not definitive fact checks
 
-## 🧠 Machine Learning Approach
+---
 
-The project follows these steps:
+## 🧠 Machine Learning
 
-1. Load the news dataset
-2. Clean and preprocess the text data
-3. Combine news title and article text
-4. Convert text into numerical features using TF-IDF
-5. Train a Logistic Regression classification model
-6. Evaluate the model using a separate test dataset
-7. Save the trained model using Joblib
-8. Build a Streamlit web application
-9. Use the saved model to make predictions on new articles
+The project uses:
+
+* **TF-IDF Vectorization** for converting text into numerical features
+* **Logistic Regression** for binary classification
+* **Scikit-learn** for model training and evaluation
+* **Joblib** for saving and loading the trained model
+
+---
 
 ## 📊 Model Performance
 
-The model achieved the following performance on the test dataset:
+The model was evaluated on a separate test dataset.
 
-| Metric | Score |
-|---|---:|
-| Accuracy | 95.69% |
-| Precision | 95.70% |
-| Recall | 95.69% |
-| F1-Score | 95.69% |
+| Metric    |      Score |
+| --------- | ---------: |
+| Accuracy  | **95.69%** |
+| Precision | **95.70%** |
+| Recall    | **95.69%** |
+| F1-Score  | **95.69%** |
 
-## 🛠️ Technologies Used
+---
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Joblib
-- Streamlit
-- Jupyter Notebook
-- Git & GitHub
-
-## 📁 Project Structure
+## 🗂️ Project Structure
 
 ```text
-FAKE_NEWS_DETECTION
+Fake-News-Detection/
 │
-├── Data
+├── Data/
 │   └── WELFake_Dataset.csv
 │
-├── Model
+├── Model/
 │   ├── fake_news_model.pkl
 │   └── metrics.json
 │
-├── Notebooks
+├── Notebooks/
 │   └── Fake_news_prediction.ipynb
 │
 ├── app.py
+├── requirements.txt
 ├── README.md
-└── requirements.txt
+└── .gitignore
+```
+
+> The dataset is not included in the GitHub repository because of its large size.
+
+---
+
+## 🛠️ Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* TF-IDF
+* Logistic Regression
+* Joblib
+* Streamlit
+* Jupyter Notebook
+* Git & GitHub
+
+---
+
+## ▶️ How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Tirthahazra/Fake-News-Detection.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd Fake-News-Detection
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Streamlit application
+
+```bash
+python -m streamlit run app.py
+```
+
+The application will open in your browser.
+
+---
+
+## 📌 Important Note
+
+This project is a Machine Learning based text classification system. It does not independently verify news using external sources or fact-checking databases.
+
+The prediction should therefore be treated as a model-based classification rather than a definitive statement about whether a news article is factually true or false.
+
+---
+
+## 👨‍💻 Author
+
+**Tirtha Hazra**
+
+Computer Science & Engineering
