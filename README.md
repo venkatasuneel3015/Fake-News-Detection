@@ -119,9 +119,16 @@ This project is a Machine Learning based text classification system. It does not
 The prediction should therefore be treated as a model-based classification rather than a definitive statement about whether a news article is factually true or false.
 
 ---
+---
 
 ## 👨‍💻 Author
 
-**Tirtha Hazra**
+**Venkata Suneel R**
 
-Computer Science & Engineering
+B.Tech in Artificial Intelligence & Data Science
+
+GitHub: [venkatasuneel3015](https://github.com/venkatasuneel3015)
+
+LinkedIn: [Venkata Suneel](https://www.linkedin.com/in/venkata-suneel-3b6679344/)
+
+---
